@@ -1,0 +1,24 @@
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+      #,http://localhost:8762/eureka/
+
+
+spring:
+  application:
+    name: product
+  datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/springcloud?characterEncoding=utf8&useSSL=false
+        username: root
+        password: 123456789
+  jpa:
+       #hibernate:
+         #ddl-auto: update
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+#server:
+#  port: 8081
